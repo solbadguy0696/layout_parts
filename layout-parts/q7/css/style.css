@@ -1,5 +1,129 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+form {
+  text-align: center;
+}
 
+input[type=text],textarea,.inputbtn,.inputbox,.select-1,button {
+  margin: 5px;
+}
+
+input[type=text] {
+  color: #44cccc;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #44cccc;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #44cccc;
+  border-radius: 3px;
+  resize: none;
+  vertical-align: middle;
+}
+
+.inputbtn,.inputbox {
+  display: inline-block;
+}
+
+.inputbtn input,.inputbox input {
+  display: none;
+}
+
+.inputbtn label,.inputbox label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.inputbtn label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+.inputbox label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+}
+
+input[type=radio]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: #009a9a;
+  border-radius: 50%;
+}
+
+input[type=checkbox]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: #009a9a;
+}
+
+.select-1 {
+  display: inline;
+}
+
+.select-1 label {
+  position: relative;
+}
+
+.select-1 label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: solid 2px #999999;
+  border-bottom: solid 2px #999999;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 5px;
+  right: 7px;
+  pointer-events: none;
+}
+
+.select-1 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70px;
+  background-color: transparent;
+  border: solid 1px #999999;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+button {
+  color: #44cccc;
+  background-color: #ffffff;
+  border: solid 1px #44cccc;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
 /* 回答はここに書いてね */
