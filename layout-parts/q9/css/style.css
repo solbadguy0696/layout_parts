@@ -2,10 +2,11 @@
 
 /* 回答はここに書いてね */
 .box--table {
-  width: 90%;
+  width: 100%;
   background-color: #ecf1f2;
   padding: 20px;
   margin: 0 auto;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .col--4 {
-  width: 33.33333%;
+  width: 33.333%;
 }
 
 .col--3 {
@@ -53,7 +54,7 @@
 }
 
 .col--2 {
-  width: 16.66666%;
+  width: 16.666%;
 }
 
 .col--63-6 {
@@ -65,11 +66,11 @@
 }
 
 .col--224-2 {
-  width: 16.66666%;
+  width: 16.666%;
 }
 
 .col--224-4 {
-  width: 33.33333%;
+  width: 33.333%;
 }
 
 /* 回答はここに書いてね */
