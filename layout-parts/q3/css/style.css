@@ -2,38 +2,34 @@
 
 /* 回答はここに書いてね */
 
-table{
+.table-box {
   width: 100%;
   table-layout: fixed;
   text-align: center;
 }
 
-tr{
-
-}
-
-tr:nth-child(odd) > td{
+.table-box__tr:nth-child(odd) > td {
   background-color: #ecf1f2;
 }
 
-tr:last-child{
+.table-box__tr:last-child {
   border-top: dashed #000 2px;
 }
 
-th,td{
+.table-box__tr__th,.table-box__tr__td {
   border: solid #dedede 1px;
   padding: 10px 0;
   word-break: break-all;
 }
 
-th{
-  color: #ffffff;
-  background-color: #2244aa;
+.table-box__tr__th {
+  color: #fff;
+  background-color: #24a;
   font-size: 18px;
   line-height: 26px;
 }
 
-td{
+.table-box__tr__td {
   font-size: 16px;
   line-height: 22px;
 }
