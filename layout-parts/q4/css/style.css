@@ -10,91 +10,77 @@
   position: relative;
 }
 
-.inbox {
+.thebox__inbox {
   font-size: 36px;
   font-weight: bold;
+  width: 100px;
+  height: 100px;
   position: absolute;
   text-align: center;
   box-sizing: border-box;
   padding : 32px;
 }
 
-.box1 {
+.thebox__box1 {
   left: 200px;
   top: 40px;
-  width: 100px;
-  height: 100px;
   background-color: #ffefd3;
   z-index: 1;
 }
 
-.box2 {
+.thebox__box2 {
   left: 280px;
   top: 120px;
-  width: 100px;
-  height: 100px;
   background-color: #7084de;
   z-index: 2;
 }
 
-.box3 {
+.thebox__box3 {
   left: 360px;
   top: 200px;
-  width: 100px;
-  height: 100px;
   background-color: #d0ecea;
   z-index: 3;
 }
 
-.box4 {
+.thebox__box4 {
   left: 280px;
   top: 280px;
-  width: 100px;
-  height: 100px;
   background-color: #8b7a5e;
   z-index: 4;
 }
 
-.box5 {
+.thebox__box5 {
   left: 200px;
   top: 360px;
-  width: 100px;
-  height: 100px;
   background-color: #9fd6d2;
   z-index: 5;
 }
 
-.box6 {
+.thebox__box6 {
   left: 120px;
   top: 280px;
-  width: 100px;
-  height: 100px;
   background-color: #fffee4;
   z-index: 6;
 }
 
-.box7 {
+.thebox__box7 {
   left: 40px;
   top: 200px;
-  width: 100px;
-  height: 100px;
   background-color: #deae70;
   z-index: 7;
 }
 
-.box8 {
+.thebox__box8 {
   left: 120px;
   top: 120px;
-  width: 100px;
-  height: 100px;
   background-color: #de70cf;
   z-index: 8;
 }
 
-.box8:after {
+.thebox__box8:after {
   content: '';
   left: 80px;
-  top: 0px;
+  top: 0;
   width: 20px;
   height: 20px;
   background-color: #ffefd3;
@@ -102,11 +88,9 @@
   z-index: 9;
 }
 
-.box9 {
+.thebox__box9 {
   left: 10px;
   top: 10px;
-  width: 100px;
-  height: 100px;
   background-color: #2b69a3;
   position: fixed;
 }
