@@ -1,129 +1,152 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-form {
+.form-box {
   text-align: center;
 }
 
-input[type=text],textarea,.inputbtn,.inputbox,.select-1,button {
+.form-box__contents {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  font-size: 16px;
   margin: 5px;
 }
 
-input[type=text] {
-  color: #44cccc;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #44cccc;
-  border-radius: 3px;
-  padding: 2px;
+.form-box__input-text {
+  color: #00bcd4;
+  border: solid 1px #00bcd4;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-textarea {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #44cccc;
-  border-radius: 3px;
+.form-box__input-text:focus {
+  box-shadow: 0 0 7px #00bcd4;
+}
+
+.form-box__input-text::-webkit-input-placeholder {
+  color: #00bcd4;
+}
+
+.form-box__textarea {
+  height: 40px;
+  border: solid 1px #00bcd4;
+  border-radius: 5px;
   resize: none;
+  padding: 5px;
   vertical-align: middle;
 }
 
-.inputbtn,.inputbox {
+.form-box__inputbtn,.form-box__inputbox {
   display: inline-block;
 }
 
-.inputbtn input,.inputbox input {
+.form-box__inputbtn__input-radio,.form-box__inputbox__input-checkbox {
   display: none;
 }
 
-.inputbtn label,.inputbox label {
+.form-box__inputbtn__label,.form-box__inputbox__label {
   position: relative;
   padding-left: 20px;
+  cursor: pointer;
 }
 
-.inputbtn label:before {
+.form-box__inputbtn__label:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #999;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 50%;
 }
 
-.inputbox label:before {
+.form-box__inputbox__label:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #999;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
-input[type=radio]:checked + label:after {
+.form-box__inputbtn__input-radio:checked + label:after {
   content: '';
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 11px;
-  height: 11px;
-  background: #009a9a;
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background: #00bcd4;
   border-radius: 50%;
 }
 
-input[type=checkbox]:checked + label:after {
+.form-box__inputbox__input-checkbox:checked + label:after {
   content: '';
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 3px;
-  width: 11px;
-  height: 11px;
-  background: #009a9a;
+  width: 13px;
+  height: 5px;
+  border-left: solid 2px #00bcd4;
+  border-bottom: solid 2px #00bcd4;
+  transform: rotate(-45deg);
 }
 
-.select-1 {
+.form-box__select-1 {
   display: inline;
 }
 
-.select-1 label {
+.form-box__select-1__label {
   position: relative;
+  background-color: #fff;
 }
 
-.select-1 label:after {
-  display: block;
+.form-box__select-1__label:after {
   content: '';
   position: absolute;
-  width: 5px;
-  height: 5px;
-  border-left: solid 2px #999999;
-  border-bottom: solid 2px #999999;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+  top: 1px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-left: solid 2px #ccc;
+  border-bottom: solid 2px #ccc;
   transform: rotate(-45deg);
-  top: 5px;
-  right: 7px;
   pointer-events: none;
 }
 
-.select-1 select {
+.form-box__select-1__label-select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
-  width: 70px;
+  outline: none;
+  font-size: 14px;
   background-color: transparent;
-  border: solid 1px #999999;
-  border-radius: 3px;
-  padding: 2px 5px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 5px 30px 5px 5px;
 }
 
-button {
-  color: #44cccc;
-  background-color: #ffffff;
-  border: solid 1px #44cccc;
-  border-radius: 3px;
-  padding: 2px 5px;
+.form-box__button {
+  color: #00bcd4;
+  background-color: #fff;
+  border: solid 1px #00bcd4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.form-box__button:active {
+  color: #ffffff;
+  background-color: #00bcd4;
 }
 /* 回答はここに書いてね */

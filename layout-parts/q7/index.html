@@ -48,22 +48,33 @@
         ・:after
         -->
         <!-- 回答はここに書いてね -->
-        <form method="get" action="">
-            <input type="text" value='input="text"'>
-            <textarea name="text" placeholder="textarea(サイズ固定)"></textarea>
-            <div class="inputbtn">
-              <input type="radio" name="radio" id="radio1"><label for="radio1">radio1</label>
-              <input type="radio" name="radio" id="radio2"><label for="radio2">radio2</label>
+        <form class="form-box" method="get" action="">
+            <input class="form-box__input-text form-box__contents" type="text" placeholder='input="text"'>
+            <textarea class="form-box__textarea form-box__contents" name="text" placeholder="textarea(サイズ固定)"></textarea>
+            <div class="form-box__inputbtn form-box__contents">
+                <input class="form-box__inputbtn__input-radio" type="radio" name="radio" id="radio1">
+                <label class="form-box__inputbtn__label" for="radio1">
+                    radio1
+                </label>
+                <input class="form-box__inputbtn__input-radio" type="radio" name="radio" id="radio2">
+                <label class="form-box__inputbtn__label" for="radio2">
+                   radio2
+                </label>
             </div>
-            <div class="inputbox">
-              <input type="checkbox" id="checkbox"><label for="checkbox">checkbox</label>
+            <div class="form-box__inputbox form-box__contents">
+              <input class="form-box__inputbox__input-checkbox" type="checkbox" id="checkbox">
+              <label class="form-box__inputbox__label" for="checkbox">
+                  checkb
+              </label>
             </div>
-            <div class="select-1">
-              <label for="select"><select name="select" id="select">
-                  <option value="select1">select1</option>
-              </select></label>
+            <div class="form-box__select-1 form-box__contents">
+                <label class="form-box__select-1__label" for="select">
+                    <select class="form-box__select-1__label-select" name="select" id="select">
+                        <option value="select1">select1</option>
+                    </select>
+                </label>
             </div>
-            <button>button</button>
+            <button class="form-box__button form-box__contents">button</button>
         </form>
         <!-- 回答はここに書いてね -->
     </div>
