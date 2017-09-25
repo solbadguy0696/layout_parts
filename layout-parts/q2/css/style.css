@@ -2,33 +2,35 @@
 
 /* 回答はここに書いてね */
 
+.wrapper {
+  padding: 20px;
+}
+
 .container {
-  width: 900px;
+  max-width: 900px;
   background: #eff3f4;
   box-sizing: border-box;
   padding: 20px;
   margin: 0 auto;
+  font-size: 18px;
+  line-height: 22px;
+  word-break: break-all;
 }
 
-.topphoto {
+.container__box:after {
+  content: '';  
+  display: block;    
+  clear: both;  
+}
+
+.container__box__topphoto {
   float: left;
   margin: 0 20px 10px 0;
 }
 
-.bottomphoto {
+.container__box__bottomphoto {
   float: right;
   margin: 0 0 10px 20px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.clearfix {
-  content: '';  
-  display: block;    
-  clear: both;  
 }
 
 /* 回答はここに書いてね */
