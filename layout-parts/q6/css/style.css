@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.title__sub:after {
+  content: '';  
+  display: block;    
+  clear: both;  
+}
+
 .title__sub--small {
   display: inline-block;
   font-size: 16px;
@@ -33,30 +39,24 @@
 }
 
 .common--blue {
-  color: #ffffff;
+  color: #fff;
   background-color: #00bcd4;
 }
 
 .error--red {
-  color: #ffffff;
+  color: #fff;
   background-color: #ff4081;
 }
 
 .disabled--gray {
-  color: #ffffff;
+  color: #fff;
   background-color: #e5e5e5;
 }
 
 .shadow--white {
-  color: #222222;
-  background-color: #ffffff;
-  box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 4px rgba(0,0,0,.12);
-}
-
-.clearfix {
-  content: '';  
-  display: block;    
-  clear: both;  
+  color: #222;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .12),0 1px 4px rgba(0, 0, 0, .12);
 }
 
 /* 回答はここに書いてね */
